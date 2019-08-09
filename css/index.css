@@ -223,3 +223,28 @@ header nav div a {
     margin: 20px;
     margin-bottom: 40px;
 }
+
+/* css animation */
+
+header nav div a:hover, footer nav a:hover {
+    color: #0000ff;
+    animation-duration: 2s;
+    animation-name: colorful;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    33% {color: #FF0000}
+    66% {color: #00FF00}
+    100% {color: #0000FF}
+}
+
+header nav:hover img {
+    animation-duration: 0.5s;
+    animation-name: spin;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
