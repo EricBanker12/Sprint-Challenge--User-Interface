@@ -256,7 +256,7 @@ header nav:hover img {
     .about-middle-content div img {width: 100%}
 }
 
-@media (max-width:600px) {
+@media (max-width:767px) {
     .container {width:400px;}
     header {overflow: hidden}
     header .jumbo {transform: translateX(-25%)}
@@ -265,5 +265,5 @@ header nav:hover img {
     .top-content .text-container {width:98%}
     .bottom-content {flex-wrap: wrap}
     .bottom-content .text-container {width:98%;margin-bottom: 10px;}
-    html, body { min-width: 400px; height: unset;}
+    html, body { min-width: 400px; height: unset;} /* mobile device fix */
 }
