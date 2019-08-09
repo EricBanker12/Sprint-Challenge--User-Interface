@@ -186,3 +186,10 @@ header nav div a {
 .middle-content .boxes .box.box8{background-color:hotpink}
 .middle-content .boxes .box.box9{background-color:indigo}
 .middle-content .boxes .box.box10{background-color:dodgerblue}
+
+/* about-top-content */
+
+.about-top-content {
+    padding: 0 20px 20px;
+    border-bottom: 1px dashed black;
+}
