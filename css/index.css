@@ -152,12 +152,11 @@ header nav {
     margin: 20px 0;
 }
 
-header img {
+header .jumbo {
     margin: 20px 0;
 }
 
 header nav img {
-    margin: 0;
     margin-right: 45px;
 }
 
@@ -247,4 +246,24 @@ header nav:hover img {
 @keyframes spin {
     from {transform: rotate(0deg)}
     to {transform: rotate(360deg)}
+}
+
+/* responsive breakpoints */
+@media (min-width:1366px) {
+    .container {width:1200px;}
+    header .jumbo {width: 100%}
+    .about-middle-content div {width: 570px}
+    .about-middle-content div img {width: 100%}
+}
+
+@media (max-width:600px) {
+    .container {width:400px;}
+    header {overflow: hidden}
+    header .jumbo {transform: translateX(-25%)}
+    header nav img {margin-right: 10px;}
+    .middle-content .boxes .box {width: 33%}
+    .top-content .text-container {width:98%}
+    .bottom-content {flex-wrap: wrap}
+    .bottom-content .text-container {width:98%;margin-bottom: 10px;}
+    html, body { min-width: 400px; height: unset;}
 }
