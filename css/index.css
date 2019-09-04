@@ -144,3 +144,126 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* header */
+header nav {
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0;
+}
+
+header .jumbo {
+    margin: 20px 0;
+}
+
+header nav img {
+    margin-right: 45px;
+}
+
+header nav div {
+    display: flex;
+    width: 560px;
+    justify-content: space-between;
+}
+
+header nav div a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* boxes */
+.middle-content .boxes .box.box1{background-color:teal}
+.middle-content .boxes .box.box2{background-color:gold}
+.middle-content .boxes .box.box3{background-color:cadetblue}
+.middle-content .boxes .box.box4{background-color:coral}
+.middle-content .boxes .box.box5{background-color:crimson}
+.middle-content .boxes .box.box6{background-color:forestgreen}
+.middle-content .boxes .box.box7{background-color:darkorchid}
+.middle-content .boxes .box.box8{background-color:hotpink}
+.middle-content .boxes .box.box9{background-color:indigo}
+.middle-content .boxes .box.box10{background-color:dodgerblue}
+
+/* about-top-content */
+.about-top-content {
+    padding: 0 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
+/* about-middle-content */
+.about-middle-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.about-middle-content div {
+    width: 370px;
+    margin: 30px 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-middle-content div img {margin-bottom: 10px}
+
+.about-middle-content div p {margin-bottom: 20px;}
+
+.about-middle-content div a {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 23px;
+}
+
+/* about-bottom-content */
+.about-bottom-content {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+/* css animation */
+
+header nav div a:hover, footer nav a:hover {
+    color: #0000ff;
+    animation-duration: 2s;
+    animation-name: colorful;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    33% {color: #FF0000}
+    66% {color: #00FF00}
+    100% {color: #0000FF}
+}
+
+header nav:hover img {
+    animation-duration: 0.5s;
+    animation-name: spin;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+/* responsive breakpoints */
+@media (min-width:1366px) {
+    .container {width:1200px;}
+    header .jumbo {width: 100%}
+    .about-middle-content div {width: 570px}
+    .about-middle-content div img {width: 100%}
+}
+
+@media (max-width:767px) {
+    .container {width:400px;}
+    header {overflow: hidden}
+    header .jumbo {transform: translateX(-25%)}
+    header nav img {margin-right: 10px;}
+    .middle-content .boxes .box {width: 33%}
+    .top-content .text-container {width:98%}
+    .bottom-content {flex-wrap: wrap}
+    .bottom-content .text-container {width:98%;margin-bottom: 10px;}
+    html, body { min-width: 400px; height: unset;} /* mobile device fix */
+}
